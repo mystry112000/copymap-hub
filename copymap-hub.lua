@@ -6498,4 +6498,4 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 	end
 end
 
-return synsaveinstance
+saveinstance = synsaveinstance
