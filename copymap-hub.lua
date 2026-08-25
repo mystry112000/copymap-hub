@@ -11,7 +11,7 @@ for any1, any2 in t do
 if type(any1) == string.char(110,117,109,98,101,114) then
 tmp[any2] = valueOverride or true
 elseif type(any2) == string.char(116,97,98,108,101) then
-tmp[any1] = arrayToDict(any2, mixedMode) 			else
+tmp[any1] = arrayToDict(any2, mixedMode) else
 tmp[any1] = any2
 end
 end
@@ -209,7 +209,7 @@ base64encode = string.char(108,111,99,97,108,32,97,61,123,46,46,46,125,108,111,9
 base64decode = string.char(108,111,99,97,108,32,97,61,123,46,46,46,125,108,111,99,97,108,32,98,61,97,91,49,93,108,111,99,97,108,32,102,117,110,99,116,105,111,110,32,99,40,97,44,98,41,114,101,116,117,114,110,32,115,116,114,105,110,103,46,102,105,110,100,40,97,44,98,44,110,105,108,44,116,114,117,101,41,101,110,100,59,114,101,116,117,114,110,32,99,40,98,44,34,100,101,99,111,100,101,34,41,97,110,100,40,99,40,98,44,34,98,97,115,101,54,52,34,41,111,114,32,99,40,115,116,114,105,110,103,46,108,111,119,101,114,40,116,111,115,116,114,105,110,103,40,97,91,50,93,41,41,44,34,98,97,115,101,54,52,34,41,41),
 gethiddenproperty = string.char(115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,103,101,116,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,104,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,112,114,111,112,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,115,116,114,105,110,103,46,115,117,98,40,46,46,46,44,35,46,46,46,41,32,126,61,32,34,115,34),
 gethui = string.char(115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,103,101,116,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,104,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,117,105,34,44,110,105,108,44,116,114,117,101,41),
-getnilinstances = string.char(115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,110,105,108,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,103,101,116,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,115,116,114,105,110,103,46,115,117,98,40,46,46,46,44,35,46,46,46,41,32,61,61,32,34,115,34), 		getscriptbytecode = string.char(115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,103,101,116,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,115,99,114,105,112,116,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,98,121,116,101,99,111,100,101,34,44,110,105,108,44,116,114,117,101,41), 				protectgui = string.char(115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,112,114,111,116,101,99,116,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,117,105,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,110,111,116,32,115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,117,110,34,44,110,105,108,44,116,114,117,101,41),
+getnilinstances = string.char(115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,110,105,108,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,103,101,116,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,115,116,114,105,110,103,46,115,117,98,40,46,46,46,44,35,46,46,46,41,32,61,61,32,34,115,34), getscriptbytecode = string.char(115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,103,101,116,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,115,99,114,105,112,116,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,98,121,116,101,99,111,100,101,34,44,110,105,108,44,116,114,117,101,41), protectgui = string.char(115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,112,114,111,116,101,99,116,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,117,105,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,110,111,116,32,115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,117,110,34,44,110,105,108,44,116,114,117,101,41),
 setrbxclipboard = string.char(115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,115,101,116,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,114,98,120,34,44,110,105,108,44,116,114,117,101,41,32,97,110,100,32,115,116,114,105,110,103,46,102,105,110,100,40,46,46,46,44,34,99,108,105,112,98,111,97,114,100,34,44,110,105,108,44,116,114,117,101,41),
 }, true, 10)
 end
@@ -228,14 +228,13 @@ local getscriptbytecode = global_container.getscriptbytecode local base64encode 
 local base64decode = global_container.base64decode
 local sharedStringId = 1e15 local sharedStrings = setmetatable({}, {
 __index = function(self, str)
-local id = base64encode(tostring(sharedStringId)) 		sharedStringId += 1
-self[str] = id 		return id
+local id = base64encode(tostring(sharedStringId)) sharedStringId += 1
+self[str] = id return id
 end,
 })
 local inheritedProperties = {}
 local defaultInstances = {}
-local referents, refSize = setmetatable({}, { __mode = string.char(107,115) }), 0
-local function getRef(instance)
+local referents, refSize = setmetatable({}, { __mode = string.char(107,115) }), 0 local function getRef(instance)
 local ref = referents[instance]
 if not ref then
 ref = refSize
@@ -302,12 +301,12 @@ local Type_Ids = {
 [string.char(67,111,110,116,101,110,116)] = 34,
 }
 local Attribute_Type_Ids =
-{ 		[string.char(110,105,108)] = 0x01,
+{ [string.char(110,105,108)] = 0x01,
 string = 0x02,
 boolean = 0x03,
 int32 = 0x04,
-number = 0x06, 		ValueArray = 0x07,
-ValueTable = 0x08, 		UDim = 0x09,
+number = 0x06, ValueArray = 0x07,
+ValueTable = 0x08, UDim = 0x09,
 UDim2 = 0x0A,
 Ray = 0x0B,
 Faces = 0x0C,
@@ -435,7 +434,6 @@ Assistant = 62,
 Restricted = 63,
 }
 local function capabilityHalves(raw)
-
 local lo, hi = 0, 0
 for _, flag in string.split(tostring(raw), string.char(32,124,32)) do
 local b = CAPABILITY_BITS[flag]
@@ -532,7 +530,7 @@ local hi, lo = splitU64(neg and -v or v)
 local carry = bit32.extract(lo, 31)
 lo = bit32.lshift(lo, 1)
 hi = bit32.bor(bit32.lshift(hi, 1), carry)
-if neg then 		if lo == 0 then
+if neg then if lo == 0 then
 lo, hi = 0xFFFFFFFF, hi - 1
 else
 lo -= 1
@@ -552,7 +550,6 @@ end
 local function u32FromHex(hex, at)
 return tonumber(string.sub(hex, at, at + 7), 16)
 end
-
 local function pokeU32Planes(sbuf, o, n, v)
 sbuf:pokeu8(o, bit32.rshift(v, 24))
 sbuf:pokeu8(o + n, bit32.band(bit32.rshift(v, 16), 0xFF))
@@ -577,7 +574,6 @@ lastRef = ref
 return zigzag32(acc)
 end)
 end
-
 local function planeEncoder(...)
 local getters = { ... }
 local k = #getters
@@ -740,7 +736,7 @@ local b = buffer.create(1)
 buffer.writeu8(b, 0, raw and 1 or 0)
 return b, 1
 end,
-[string.char(110,117,109,98,101,114)] = function(raw) 		local b = buffer.create(8)
+[string.char(110,117,109,98,101,114)] = function(raw) local b = buffer.create(8)
 buffer.writef64(b, 0, raw)
 return b, 8
 end,
@@ -1006,12 +1002,12 @@ buffer.writeu8(b, 20, raw.Reverses and 1 or 0)
 return b, 21
 end,
 }
-do 	Attribute_Encoders[string.char(78,117,109,98,101,114,83,101,113,117,101,110,99,101)] =
+do Attribute_Encoders[string.char(78,117,109,98,101,114,83,101,113,117,101,110,99,101)] =
 Attribute_Encoders._makeSequence(Attribute_Encoders[string.char(78,117,109,98,101,114,83,101,113,117,101,110,99,101,75,101,121,112,111,105,110,116)], 12)
 Attribute_Encoders[string.char(67,111,108,111,114,83,101,113,117,101,110,99,101)] =
 Attribute_Encoders._makeSequence(Attribute_Encoders[string.char(67,111,108,111,114,83,101,113,117,101,110,99,101,75,101,121,112,111,105,110,116)], 20)
 end
-do 	Attribute_Encoders._packF32 = Attribute_Encoders._makeVectorPacker(buffer.writef32, 4)
+do Attribute_Encoders._packF32 = Attribute_Encoders._makeVectorPacker(buffer.writef32, 4)
 Attribute_Encoders._packI16 = Attribute_Encoders._makeVectorPacker(buffer.writei16, 2)
 end
 local Binary_Encoders = {
@@ -1109,7 +1105,7 @@ sbuf:writef32(kp.Time)
 sbuf:writef32(c.R)
 sbuf:writef32(c.G)
 sbuf:writef32(c.B)
-sbuf:writef32(0) 	end),
+sbuf:writef32(0) end),
 [string.char(78,117,109,98,101,114,82,97,110,103,101)] = f32Encoder(function(v)
 return v.Min
 end, function(v)
@@ -1171,8 +1167,8 @@ end)
 end,
 [string.char(79,112,116,105,111,110,97,108,67,111,111,114,100,105,110,97,116,101,70,114,97,109,101)] = function(sbuf, vals, n)
 local exists = table.create(n)
-sbuf:writeu8(0x10) 		writeCFrameBody(sbuf, vals, n, exists)
-sbuf:writeu8(0x02) 		local boolBase = sbuf:allocRegion(n)
+sbuf:writeu8(0x10) writeCFrameBody(sbuf, vals, n, exists)
+sbuf:writeu8(0x02) local boolBase = sbuf:allocRegion(n)
 for i = 1, n do
 sbuf:pokeu8(boolBase + (i - 1), exists[i] and 1 or 0)
 end
@@ -1198,7 +1194,7 @@ local hasStyle, style = pcall(index, val, string.char(83,116,121,108,101))
 sbuf:writeLenString(val.Family)
 sbuf:writeu16(hasWeight and weight.Value or 0)
 sbuf:writeu8(hasStyle and style.Value or 0)
-sbuf:writeu32(0) 		end
+sbuf:writeu32(0) end
 end,
 [string.char(83,101,99,117,114,105,116,121,67,97,112,97,98,105,108,105,116,105,101,115)] = function(sbuf, vals, n)
 local base = sbuf:allocRegion(8 * n)
@@ -1236,7 +1232,7 @@ writeRefPlane(sbuf, m, sbuf:allocRegion(4 * m), function(i)
 return (refs and refs[objectRefs[i]]) or -1
 end)
 end
-sbuf:writeu32(0) 	end,
+sbuf:writeu32(0) end,
 }
 for datatype, sameAs in
 {
@@ -1250,7 +1246,7 @@ Type_Ids[datatype] = Type_Ids[sameAs]
 Binary_Encoders[datatype] = Binary_Encoders[sameAs]
 end
 local ESCAPES_PATTERN = string.char(91,38,60,62,92,34,39,92,48,92,49,45,92,57,92,49,49,45,92,49,50,92,49,52,45,92,51,49,92,49,50,55,45,92,50,53,53,93) local ESCAPES = {
-[string.char(38)] = string.char(38,97,109,112,59), 	[string.char(60)] = string.char(38,108,116,59), 	[string.char(62)] = string.char(38,103,116,59), 	[string.char(34)] = string.char(38,35,51,52,59), 	[string.char(39)] = string.char(38,35,51,57,59), 	[string.char(92,48)] = string.char(),
+[string.char(38)] = string.char(38,97,109,112,59), [string.char(60)] = string.char(38,108,116,59), [string.char(62)] = string.char(38,103,116,59), [string.char(34)] = string.char(38,35,51,52,59), [string.char(39)] = string.char(38,35,51,57,59), [string.char(92,48)] = string.char(),
 }
 for rangeStart, rangeEnd in string.gmatch(ESCAPES_PATTERN, string.char(40,46,41,37,45,40,46,41)) do
 for charCode = string.byte(rangeStart), string.byte(rangeEnd) do
@@ -1259,7 +1255,7 @@ end
 end
 local XML_Encoders
 XML_Encoders = {
-_cdata = function(raw) 		return string.char(60,33,91,67,68,65,84,65,91) .. raw .. string.char(93,93,62)
+_cdata = function(raw) return string.char(60,33,91,67,68,65,84,65,91) .. raw .. string.char(93,93,62)
 end,
 _normalizeNumber = function(raw)
 if raw ~= raw then
@@ -1272,7 +1268,7 @@ end
 return raw
 end,
 _normalizeRange = function(raw)
-return raw ~= raw and string.char(48) or raw 	end,
+return raw ~= raw and string.char(48) or raw end,
 _minMax = function(min, max, encoder)
 return string.char(60,109,105,110,62) .. encoder(min) .. string.char(60,47,109,105,110,62,60,109,97,120,62) .. encoder(max) .. string.char(60,47,109,97,120,62)
 end,
@@ -1295,10 +1291,10 @@ end,
 Axes = function(raw)
 return string.char(60,97,120,101,115,62) .. countBits(raw.X, raw.Y, raw.Z) .. string.char(60,47,97,120,101,115,62)
 end,
-BinaryString = function(raw) 		return raw == string.char() and string.char() or base64encode(raw)
+BinaryString = function(raw) return raw == string.char() and string.char() or base64encode(raw)
 end,
 BrickColor = function(raw)
-return raw.Number 	end,
+return raw.Number end,
 CFrame = function(raw)
 local X, Y, Z, R00, R01, R02, R10, R11, R12, R20, R21, R22 = raw:GetComponents()
 return XML_Encoders._vector(X, Y, Z)
@@ -1345,12 +1341,12 @@ return _normalizeRange(keypoint.Time)
 .. _normalizeRange(color3.B)
 .. string.char(32,48,32)
 end,
-Content = function(raw) 				local SourceType = raw.SourceType
+Content = function(raw) local SourceType = raw.SourceType
 return SourceType == Enum.ContentSourceType.None and string.char(60,110,117,108,108,62,60,47,110,117,108,108,62)
 or SourceType == Enum.ContentSourceType.Uri and string.char(60,117,114,105,62) .. XML_Encoders.string(raw.Uri) .. string.char(60,47,117,114,105,62)
 or SourceType == Enum.ContentSourceType.Object and string.char(60,82,101,102,62) .. getRef(raw.Object) .. string.char(60,47,82,101,102,62)
 end,
-ContentId = function(raw) 		return raw == string.char() and string.char(60,110,117,108,108,62,60,47,110,117,108,108,62) or string.char(60,117,114,108,62) .. XML_Encoders.string(raw) .. string.char(60,47,117,114,108,62), string.char(67,111,110,116,101,110,116)
+ContentId = function(raw) return raw == string.char() and string.char(60,110,117,108,108,62,60,47,110,117,108,108,62) or string.char(60,117,114,108,62) .. XML_Encoders.string(raw) .. string.char(60,47,117,114,108,62), string.char(67,111,110,116,101,110,116)
 end,
 CoordinateFrame = function(raw)
 return string.char(60,67,70,114,97,109,101,62) .. XML_Encoders.CFrame(raw) .. string.char(60,47,67,70,114,97,109,101,62)
@@ -1369,11 +1365,11 @@ return string.char(60,70,97,109,105,108,121,62)
 .. string.char(60,47,70,97,109,105,108,121,62,60,87,101,105,103,104,116,62)
 .. (hasWeight and XML_Encoders.EnumItem(weight) or string.char())
 .. string.char(60,47,87,101,105,103,104,116,62,60,83,116,121,108,101,62)
-.. (hasStyle and style.Name or string.char()) 			.. string.char(60,47,83,116,121,108,101,62)
+.. (hasStyle and style.Name or string.char()) .. string.char(60,47,83,116,121,108,101,62)
 end,
 NetAssetRef = nil,
-NumberRange = function(raw) 		local _normalizeRange = XML_Encoders._normalizeRange
-return _normalizeRange(raw.Min) .. string.char(32) .. _normalizeRange(raw.Max) 	end,
+NumberRange = function(raw) local _normalizeRange = XML_Encoders._normalizeRange
+return _normalizeRange(raw.Min) .. string.char(32) .. _normalizeRange(raw.Max) end,
 NumberSequence = nil,
 NumberSequenceKeypoint = function(keypoint)
 local _normalizeRange = XML_Encoders._normalizeRange
@@ -1400,7 +1396,7 @@ end,
 Rect = function(raw)
 return XML_Encoders._minMax(raw.Min, raw.Max, XML_Encoders.Vector2), string.char(82,101,99,116,50,68)
 end,
-Region3 = function(raw) 		local Translation = raw.CFrame.Position
+Region3 = function(raw) local Translation = raw.CFrame.Position
 local HalfSize = raw.Size * 0.5
 return XML_Encoders._minMax(Translation - HalfSize, Translation + HalfSize, XML_Encoders.Vector3)
 end,
@@ -1446,7 +1442,7 @@ return string.char(60,88,83,62)
 .. Y.Offset
 .. string.char(60,47,89,79,62)
 end,
-UniqueId = function(raw) 																return string.gsub(raw, string.char(45), string.char()) 	end,
+UniqueId = function(raw) return string.gsub(raw, string.char(45), string.char()) end,
 Vector2 = function(raw)
 return XML_Encoders._vector(raw.X, raw.Y)
 end,
@@ -1458,13 +1454,13 @@ Vector3int16 = nil,
 bool = function(raw)
 return raw and string.char(116,114,117,101) or string.char(102,97,108,115,101)
 end,
-double = nil, 	float = nil, 	int = nil, 	int64 = nil, 	string = function(raw)
+double = nil, float = nil, int = nil, int64 = nil, string = function(raw)
 return (raw == nil or raw == string.char()) and string.char()
 or string_find(raw, string.char(93,93,62)) and string.gsub(raw, ESCAPES_PATTERN, ESCAPES)
 or XML_Encoders._cdata(string.gsub(raw, string.char(92,48), string.char()))
 end,
 }
-do 	XML_Encoders.NumberSequence = XML_Encoders._makeSequence(XML_Encoders.NumberSequenceKeypoint)
+do XML_Encoders.NumberSequence = XML_Encoders._makeSequence(XML_Encoders.NumberSequenceKeypoint)
 XML_Encoders.ColorSequence = XML_Encoders._makeSequence(XML_Encoders.ColorSequenceKeypoint)
 end
 for encoderName, redirectName in
@@ -1540,7 +1536,7 @@ return buffer.tostring(b)
 end
 local function AttenuationSerialize(attenuations)
 if not next(attenuations) then
-return string.char(92,48) 		end
+return string.char(92,48) end
 local count = 0
 local sorted = {}
 for key in attenuations do
@@ -1564,7 +1560,7 @@ if n == 0 then
 return string.char(92,49,92,48,92,48,92,48,92,48,92,48,92,48,92,48)
 end
 local b = buffer.create(8 + n * 48)
-buffer.writeu32(b, 0, 1) 		buffer.writeu32(b, 4, n)
+buffer.writeu32(b, 0, 1) buffer.writeu32(b, 4, n)
 local _packF32 = Attribute_Encoders._packF32
 local offset = 8
 for _, transform in transforms do
@@ -1717,17 +1713,11 @@ return AttributesSerialize(attrs)
 end,
 DefinesCapabilities = string.char(83,97,110,100,98,111,120,101,100),
 Tags = function(instance)
-local tags = service.CollectionService:GetTags(instance)
-if #tags == 0 then
+local tags = service.CollectionService:GetTags(instance) if #tags == 0 then
 return string.char()
 end
 return table.concat(tags, string.char(92,48))
 end,
-
-
-
-
-
 },
 Path2D = {
 PropertiesSerialize = function(instance)
@@ -1751,9 +1741,6 @@ end
 return buffer.tostring(b)
 end,
 },
-
-
-
 PlayerEmulatorService = {
 SerializedEmulatedPolicyInfo = function(instance)
 local EmulatedPolicyInfo = instance:GetEmulatedPolicyInfo()
@@ -1809,7 +1796,7 @@ rt = lt
 elseif mode == 2 then
 lt = rt
 end
-buffer.writeu8(b, offset, key.Interpolation.Value) 					offset += 1
+buffer.writeu8(b, offset, key.Interpolation.Value) offset += 1
 buffer.writeu8(b, offset, mode)
 offset += 1
 buffer.writef32(b, offset, key.Value)
@@ -1831,13 +1818,13 @@ return string.char(92,49,92,48,92,48,92,48,92,48,92,48,92,48,92,48,92,49,92,48,9
 end
 local perKeySize = 25
 local b = buffer.create(8 + (#keys * perKeySize) + 8 + (#keys * 4))
-buffer.writeu32(b, 0, 1) 				buffer.writeu32(b, 4, #keys)
+buffer.writeu32(b, 0, 1) buffer.writeu32(b, 4, #keys)
 local offset = 8
 for _, key in keys do
 local lt = key.LeftTangent or 0
 local rt = key.RightTangent or 0
 local qx, qy, qz, qw = cframeToQuaternion(key.Value)
-buffer.writeu8(b, offset, 12 + key.Interpolation.Value) 					offset += 1
+buffer.writeu8(b, offset, 12 + key.Interpolation.Value) offset += 1
 buffer.writef32(b, offset, qx)
 offset += 4
 buffer.writef32(b, offset, qy)
@@ -1861,11 +1848,9 @@ local keys = instance:GetKeys()
 if #keys == 0 then
 return string.char(92,50,92,48,92,48,92,48,92,48,92,48,92,48,92,48,92,49,92,48,92,48,92,48,92,48,92,48,92,48,92,48)
 end
-local valueTypeName = instance.ValueType
-local typeId = Attribute_Type_Ids[valueTypeName]
+local valueTypeName = instance.ValueType local typeId = Attribute_Type_Ids[valueTypeName]
 if not typeId then
-valueTypeName = resolveTypeName(keys[1].Value)
-typeId = Attribute_Type_Ids[valueTypeName]
+valueTypeName = resolveTypeName(keys[1].Value) typeId = Attribute_Type_Ids[valueTypeName]
 end
 local encoder = Attribute_Encoders[valueTypeName]
 if not encoder then
@@ -1888,7 +1873,7 @@ local offset = 8
 for i, key in keys do
 local lt, rt = key.LeftTangent, key.RightTangent
 local dataSize = sizes[i]
-buffer.writeu8(b, offset, key.Interpolation.Value) 					offset += 1
+buffer.writeu8(b, offset, key.Interpolation.Value) offset += 1
 buffer.writeu8(b, offset, countBits(lt, rt))
 offset += 1
 buffer.writeu32(b, offset, dataSize + 1)
@@ -1925,7 +1910,7 @@ for _, marker in markers do
 strings_size += #marker.Value + 1
 end
 local b = buffer.create(8 + strings_size + 8 + (n * 4))
-buffer.writeu32(b, 0, 2) 				buffer.writeu32(b, 4, n)
+buffer.writeu32(b, 0, 2) buffer.writeu32(b, 4, n)
 local offset = 8
 for _, marker in markers do
 local value = marker.Value
@@ -1948,7 +1933,7 @@ for _, pin in input_pins do
 buffer_size += 4 + #pin
 end
 local b = buffer.create(buffer_size)
-buffer.writeu32(b, 0, 1) 				buffer.writeu32(b, 4, n)
+buffer.writeu32(b, 0, 1) buffer.writeu32(b, 4, n)
 local encoder = Attribute_Encoders[string.char(115,116,114,105,110,103)]
 local offset = 8
 for _, pin in input_pins do
@@ -1960,17 +1945,17 @@ return buffer.tostring(b)
 end,
 },
 AnimationClip = {
-GuidBinaryString = function(instance) 				return encodeGuid(instance.Guid)
+GuidBinaryString = function(instance) return encodeGuid(instance.Guid)
 end,
 },
 AnimationRigData = {
 label = function(instance)
-local labels = instance:GetLabels() 				local n = #labels
+local labels = instance:GetLabels() local n = #labels
 if n == 0 then
 return string.char(92,49,92,48,92,48,92,48,92,48,92,48,92,48,92,48)
 end
 local b = buffer.create(8 + n * 4)
-buffer.writeu32(b, 0, 1) 				buffer.writeu32(b, 4, n)
+buffer.writeu32(b, 0, 1) buffer.writeu32(b, 4, n)
 local offset = 8
 for _, label in labels do
 buffer.writeu32(b, offset, label)
@@ -1979,7 +1964,7 @@ end
 return buffer.tostring(b)
 end,
 name = function(instance)
-local names = instance:GetNames() 				local n = #names
+local names = instance:GetNames() local n = #names
 if n == 0 then
 return string.char(92,49,92,48,92,48,92,48,92,48,92,48,92,48,92,48)
 end
@@ -1988,7 +1973,7 @@ for _, name in names do
 buffer_size += 4 + #name
 end
 local b = buffer.create(buffer_size)
-buffer.writeu32(b, 0, 1) 				buffer.writeu32(b, 4, n)
+buffer.writeu32(b, 0, 1) buffer.writeu32(b, 4, n)
 local offset = 8
 for _, name in names do
 buffer.writeu32(b, offset, #name)
@@ -2001,12 +1986,12 @@ end
 return buffer.tostring(b)
 end,
 parent = function(instance)
-local parents = instance:GetParents() 				local n = #parents
+local parents = instance:GetParents() local n = #parents
 if n == 0 then
 return string.char(92,49,92,48,92,48,92,48,92,48,92,48,92,48,92,48)
 end
 local b = buffer.create(8 + #parents * 2)
-buffer.writeu32(b, 0, 1) 				buffer.writeu32(b, 4, n)
+buffer.writeu32(b, 0, 1) buffer.writeu32(b, 4, n)
 local offset = 8
 for _, parent in parents do
 buffer.writeu16(b, offset, parent)
@@ -2015,14 +2000,14 @@ end
 return buffer.tostring(b)
 end,
 postTransform = function(instance)
-return TransformsSerialize(instance:GetPostTransforms()) 			end,
+return TransformsSerialize(instance:GetPostTransforms()) end,
 preTransform = function(instance)
-return TransformsSerialize(instance:GetPreTransforms()) 			end,
+return TransformsSerialize(instance:GetPreTransforms()) end,
 transform = function(instance)
-return TransformsSerialize(instance:GetTransforms()) 			end,
+return TransformsSerialize(instance:GetTransforms()) end,
 },
 AudioDeviceInput = {
-AccessList = function(instance) 				local userid_accesslist = instance:GetUserIdAccessList()
+AccessList = function(instance) local userid_accesslist = instance:GetUserIdAccessList()
 local n = #userid_accesslist
 if n == 0 then
 return string.char()
@@ -2053,7 +2038,7 @@ DistanceAttenuation = function(instance)
 return AttenuationSerialize(instance:GetDistanceAttenuation())
 end,
 },
-DebuggerBreakpoint = { line = string.char(76,105,110,101) }, 		BallSocketConstraint = { MaxFrictionTorqueXml = string.char(77,97,120,70,114,105,99,116,105,111,110,84,111,114,113,117,101) },
+DebuggerBreakpoint = { line = string.char(76,105,110,101) }, BallSocketConstraint = { MaxFrictionTorqueXml = string.char(77,97,120,70,114,105,99,116,105,111,110,84,111,114,113,117,101) },
 BasePart = {
 Color3uint8 = string.char(67,111,108,111,114),
 MaterialVariantSerialized = string.char(77,97,116,101,114,105,97,108,86,97,114,105,97,110,116),
@@ -2077,17 +2062,10 @@ clone:Destroy()
 return value
 end,
 },
-
 Terrain = {
-AcquisitionMethod = string.char(76,97,115,116,85,115,101,100,77,111,100,105,102,105,99,97,116,105,111,110,77,101,116,104,111,100),
-
-
-
-
-
-MaterialColors = function(instance)
+AcquisitionMethod = string.char(76,97,115,116,85,115,101,100,77,111,100,105,102,105,99,97,116,105,111,110,77,101,116,104,111,100), MaterialColors = function(instance)
 local TERRAIN_MATERIAL_COLORS =
-{ 						Enum.Material.Grass,
+{ Enum.Material.Grass,
 Enum.Material.Slate,
 Enum.Material.Concrete,
 Enum.Material.Brick,
@@ -2110,8 +2088,7 @@ Enum.Material.Limestone,
 Enum.Material.Pavement,
 }
 local b = buffer.create(69)
-local offset = 6
-for _, material in TERRAIN_MATERIAL_COLORS do
+local offset = 6 for _, material in TERRAIN_MATERIAL_COLORS do
 local color = instance:GetMaterialColor(material)
 buffer.writeu8(b, offset, (color.R * 255))
 offset += 1
@@ -2149,7 +2126,7 @@ FluidFidelityInternal = string.char(70,108,117,105,100,70,105,100,101,108,105,11
 MeshPart = {
 InitialSize = string.char(77,101,115,104,83,105,122,101),
 MeshID = string.char(77,101,115,104,73,100),
-VertexCount = function(instance) 				if RiskyServicesDisabled.UGC then
+VertexCount = function(instance) if RiskyServicesDisabled.UGC then
 return __BREAK
 end
 local meshId = instance.MeshId
@@ -2181,18 +2158,18 @@ end,
 },
 Humanoid = {
 Health_XML = string.char(72,101,97,108,116,104),
-InternalBodyScale = function(instance) 																local a = instance.RootPart
+InternalBodyScale = function(instance) local a = instance.RootPart
 if not a then
 return __BREAK
 end
 return instance:GetAccessoryHandleScale(a, Enum.BodyPartR15.RootPart)
 end,
-InternalHeadScale = function(instance) 								local a = instance.Parent and instance.Parent:FindFirstChild(string.char(72,101,97,100))
+InternalHeadScale = function(instance) local a = instance.Parent and instance.Parent:FindFirstChild(string.char(72,101,97,100))
 if not a then
 return __BREAK
 end
-return instance:GetAccessoryHandleScale(a, Enum.BodyPartR15.Head).X 			end,
-NetworkHumanoidState = function(instance) 				return instance:GetState()
+return instance:GetAccessoryHandleScale(a, Enum.BodyPartR15.Head).X end,
+NetworkHumanoidState = function(instance) return instance:GetState()
 end,
 },
 HumanoidDescription = {
@@ -2229,32 +2206,31 @@ end,
 },
 LocalizationTable = {
 Contents = function(instance)
-return instance:GetContents() 			end,
+return instance:GetContents() end,
 },
-MaterialService = { Use2022MaterialsXml = string.char(85,115,101,50,48,50,50,77,97,116,101,114,105,97,108,115) }, 		VideoPlayer = {
-PlayingReplicating = string.char(73,115,80,108,97,121,105,110,103), 		},
+MaterialService = { Use2022MaterialsXml = string.char(85,115,101,50,48,50,50,77,97,116,101,114,105,97,108,115) }, VideoPlayer = {
+PlayingReplicating = string.char(73,115,80,108,97,121,105,110,103), },
 Model = {
 ModelMeshCFrame = function(instance)
-return instance:GetModelCFrame() 			end,
+return instance:GetModelCFrame() end,
 ModelMeshSize = function(instance)
-return instance:GetExtentsSize() 			end,
-Scale = function(instance) 				return instance:GetScale()
+return instance:GetExtentsSize() end,
+Scale = function(instance) return instance:GetScale()
 end,
 ScaleFactor = function(instance)
 return instance:GetScale()
 end,
-WorldPivotData = string.char(87,111,114,108,100,80,105,118,111,116), 		},
+WorldPivotData = string.char(87,111,114,108,100,80,105,118,111,116), },
 PackageLink = {
 PackageContentSerialize = string.char(80,97,99,107,97,103,101,67,111,110,116,101,110,116),
 PackageIdSerialize = string.char(80,97,99,107,97,103,101,73,100),
 VersionIdSerialize = string.char(86,101,114,115,105,111,110,78,117,109,98,101,114),
 },
-Players = { MaxPlayersInternal = string.char(77,97,120,80,108,97,121,101,114,115), PreferredPlayersInternal = string.char(80,114,101,102,101,114,114,101,100,80,108,97,121,101,114,115) },
-StarterPlayer = {
-AvatarJointUpgrade_SerializedRollout = string.char(65,118,97,116,97,114,74,111,105,110,116,85,112,103,114,97,100,101), 					},
+Players = { MaxPlayersInternal = string.char(77,97,120,80,108,97,121,101,114,115), PreferredPlayersInternal = string.char(80,114,101,102,101,114,114,101,100,80,108,97,121,101,114,115) }, StarterPlayer = {
+AvatarJointUpgrade_SerializedRollout = string.char(65,118,97,116,97,114,74,111,105,110,116,85,112,103,114,97,100,101), },
 Smoke = { size_xml = string.char(83,105,122,101), opacity_xml = string.char(79,112,97,99,105,116,121), riseVelocity_xml = string.char(82,105,115,101,86,101,108,111,99,105,116,121) },
 Sound = {
-xmlRead_MinDistance_3 = string.char(82,111,108,108,79,102,102,77,105,110,68,105,115,116,97,110,99,101), 			xmlRead_MaxDistance_3 = string.char(82,111,108,108,79,102,102,77,97,120,68,105,115,116,97,110,99,101), 		},
+xmlRead_MinDistance_3 = string.char(82,111,108,108,79,102,102,77,105,110,68,105,115,116,97,110,99,101), xmlRead_MaxDistance_3 = string.char(82,111,108,108,79,102,102,77,97,120,68,105,115,116,97,110,99,101), },
 ViewportFrame = {
 CameraCFrame = function(instance)
 local CurrentCamera = instance.CurrentCamera
@@ -2281,7 +2257,7 @@ return countBits(instance.Enabled, instance.Active)
 end,
 },
 Workspace = {
-CollisionGroups = function(instance) 				local collision_groups = game:GetService(string.char(80,104,121,115,105,99,115,83,101,114,118,105,99,101)):GetRegisteredCollisionGroups()
+CollisionGroups = function(instance) local collision_groups = game:GetService(string.char(80,104,121,115,105,99,115,83,101,114,118,105,99,101)):GetRegisteredCollisionGroups()
 local n = #collision_groups
 if n == 0 then
 return string.char()
@@ -2300,26 +2276,25 @@ local n = #collision_groups
 if n == 0 then
 return string.char(92,49,92,48)
 end
-local buffer_size = 2
-for _, group in collision_groups do
-buffer_size += 7 + #group.name 				end
+local buffer_size = 2 for _, group in collision_groups do
+buffer_size += 7 + #group.name end
 local b = buffer.create(buffer_size)
-buffer.writeu8(b, 0, 1) 				buffer.writeu8(b, 1, n)
+buffer.writeu8(b, 0, 1) buffer.writeu8(b, 1, n)
 local typeId_int32 = Attribute_Type_Ids[string.char(105,110,116,51,50)]
 local offset = 2
 for i, group in collision_groups do
 local name, id, mask = group.name, i - 1, group.mask
 local name_len = #name
-buffer.writeu8(b, offset, id) 					offset += 1
-buffer.writeu8(b, offset, typeId_int32) 					offset += 1
-buffer.writei32(b, offset, mask) 					offset += 4
-buffer.writeu8(b, offset, name_len) 					offset += 1
-buffer.writestring(b, offset, name) 					offset += name_len
+buffer.writeu8(b, offset, id) offset += 1
+buffer.writeu8(b, offset, typeId_int32) offset += 1
+buffer.writei32(b, offset, mask) offset += 4
+buffer.writeu8(b, offset, name_len) offset += 1
+buffer.writestring(b, offset, name) offset += name_len
 end
 return buffer.tostring(b)
 end,
 },
-ServiceVisibilityService = { 			HiddenServices = function()
+ServiceVisibilityService = { HiddenServices = function()
 return ServiceVisibilitySerialize(false)
 end,
 VisibleServices = function()
@@ -2344,7 +2319,7 @@ if res and res ~= string.char() then
 return service.HttpService:JSONDecode(res)[FULL_VERSION]
 end
 end,
-[2] = function() 				local client_version_str = tostring(CLIENT_VERSION)
+[2] = function() local client_version_str = tostring(CLIENT_VERSION)
 local dump
 local matching_versions, matched, is_matched, exact_match = {}, {}
 local function process_line(line, noinsert)
@@ -2352,13 +2327,13 @@ local file_version, patch_commit, version_hash =
 string.match(line, string.char(34,37,100,43,37,46,40,37,100,43,41,37,46,40,91,94,34,93,43,41,34,58,32,34,40,118,101,114,115,105,111,110,37,45,91,94,34,93,43,41))
 if file_version == client_version_str then
 is_matched = true
-if version_hash and not matched[version_hash] then 							matched[version_hash] = true
-if not noinsert then 								table.insert(matching_versions, version_hash) 							end
+if version_hash and not matched[version_hash] then matched[version_hash] = true
+if not noinsert then table.insert(matching_versions, version_hash) end
 if string.sub(FULL_VERSION, -#patch_commit) == patch_commit then
-return version_hash 							end
+return version_hash end
 end
 elseif is_matched then
-return false 					end
+return false end
 end
 local function isFullDump(classes)
 for _, class in classes do
@@ -2368,7 +2343,7 @@ return member.Default ~= nil
 end
 end
 end
-return false 				end
+return false end
 local function tryFetchDump(url)
 local ok, decoded = pcall(function()
 local raw = game:HttpGet(url, true)
@@ -2386,7 +2361,7 @@ string.char(104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,11
 .. hash
 .. string.char(45,70,117,108,108,45,65,80,73,45,68,117,109,112,46,106,115,111,110)
 )
-if decoded and isFullDump(decoded) then 						return decoded
+if decoded and isFullDump(decoded) then return decoded
 end
 return nil
 end
@@ -2399,7 +2374,7 @@ true
 )
 if o then
 local version_history = string.split(r, string.char(92,110))
-version_history[#version_history] = nil 												for i = #version_history, 2, -1 do 							local res = process_line(version_history[i])
+version_history[#version_history] = nil for i = #version_history, 2, -1 do local res = process_line(version_history[i])
 if res == false then
 break
 elseif res then
@@ -2408,7 +2383,7 @@ end
 end
 end
 end
-do 					local function fallback_channel(channel)
+do local function fallback_channel(channel)
 local ok, res = pcall(function()
 return service.HttpService:JSONDecode(
 game:HttpGet(
@@ -2421,18 +2396,18 @@ end)
 if not ok then
 return
 end
-if res.version and res.clientVersionUpload then 							local line = string.char(34) .. res.version .. string.char(34,58,32,34) .. res.clientVersionUpload
+if res.version and res.clientVersionUpload then local line = string.char(34) .. res.version .. string.char(34,58,32,34) .. res.clientVersionUpload
 return process_line(line, true)
 end
 end
 if not exact_match then
-exact_match = fallback_channel(string.char(122,98,101,116,97)) or fallback_channel() 					end
+exact_match = fallback_channel(string.char(122,98,101,116,97)) or fallback_channel() end
 end
 if exact_match then
 dump = fetchFullApiDump(exact_match)
 end
 if not dump then
-for _, version_hash in matching_versions do 						dump = fetchFullApiDump(version_hash)
+for _, version_hash in matching_versions do dump = fetchFullApiDump(version_hash)
 if dump then
 break
 end
@@ -2466,7 +2441,7 @@ if api_class.Service then
 table.insert(tags, string.char(83,101,114,118,105,99,101))
 elseif permits and permits[string.char(71,101,116,83,101,114,118,105,99,101)] then
 table.insert(tags, string.char(83,101,114,118,105,99,101))
-elseif not permits or not permits[string.char(78,101,119)] then 						table.insert(tags, string.char(78,111,116,67,114,101,97,116,97,98,108,101))
+elseif not permits or not permits[string.char(78,101,119)] then table.insert(tags, string.char(78,111,116,67,114,101,97,116,97,98,108,101))
 end
 if #tags ~= 0 then
 class.Tags = tags
@@ -2476,7 +2451,7 @@ service.ReflectionService.GetPropertiesOfClass,
 service.ReflectionService,
 className,
 filter
-) 					if o then
+) if o then
 for _, property in r do
 local propertyName = property.Name
 local valueType = property.Type
@@ -2493,7 +2468,6 @@ category, valueType_Name = string.char(67,108,97,115,115), valueType.InstanceTyp
 else
 valueType_Name = renames[valueType_Name] or valueType_Name
 end
-
 local member = {
 Name = propertyName,
 MemberType = string.char(80,114,111,112,101,114,116,121),
@@ -2525,7 +2499,7 @@ for i, fetcher in APIDUMP_FETCHERS do
 local o, r = pcall(fetcher)
 if o and r then
 API_Dump = r
-if i == 2 then 					if writefile then
+if i == 2 then if writefile then
 local ok, err =
 pcall(writefile, FILE_NAME, service.HttpService:JSONEncode({ [FULL_VERSION] = API_Dump }))
 if not ok then
@@ -2577,10 +2551,10 @@ local ContentProperties
 for _, Member in API_Class.Members do
 if Member.MemberType == string.char(80,114,111,112,101,114,116,121) then
 local Serialization = Member.Serialization
-if Serialization.CanLoad then 						local PropertyName = Member.Name
+if Serialization.CanLoad then local PropertyName = Member.Name
 local ValueType = Member.ValueType
 local ValueType_Name = ValueType.Name
-if ValueType_Name == string.char(67,111,110,116,101,110,116) or ValueType_Name == string.char(65,115,115,101,116,67,111,110,116,101,110,116,77,97,112) then 														if not ContentProperties then
+if ValueType_Name == string.char(67,111,110,116,101,110,116) or ValueType_Name == string.char(65,115,115,101,116,67,111,110,116,101,110,116,77,97,112) then if not ContentProperties then
 ContentProperties = {}
 if not RiskyServicesDisabled.Reflection then
 local o, properties = pcall(
@@ -2624,12 +2598,12 @@ end
 local preferredDescriptorProp
 if PreferredDescriptorName then
 preferredDescriptorProp = tmp_classDict[ClassName][PreferredDescriptorName]
-if 									preferredDescriptorProp == nil
+if preferredDescriptorProp == nil
 or (
 preferredDescriptorProp.MemberType == string.char(80,114,111,112,101,114,116,121)
 and ValueType_Name ~= preferredDescriptorProp.ValueType
 )
-then 									PreferredDescriptorName = nil
+then PreferredDescriptorName = nil
 end
 end
 local Property = {
@@ -2649,7 +2623,7 @@ preferredDescriptorProp.MemberType == string.char(80,114,111,112,101,114,116,121
 and function(instance)
 return instance[PreferredDescriptorName]
 end
-or function(instance) 										return instance[PreferredDescriptorName](instance)
+or function(instance) return instance[PreferredDescriptorName](instance)
 end
 )
 Property.Fallback = NotScriptableFix
@@ -2676,25 +2650,6 @@ end
 return classList
 end
 end
-@class SynSaveInstance
-Represents the options for saving instances with custom settings using the synsaveinstance function.
-]=]
-
-
-@function saveinstance
-Saves instances with specified options. Example:
-```lua
-local Params = {
-RepoURL = string.char(104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,108,117,97,117,47,85,110,105,118,101,114,115,97,108,83,121,110,83,97,118,101,73,110,115,116,97,110,99,101,47,109,97,105,110,47),
-SSI = string.char(115,97,118,101,105,110,115,116,97,110,99,101),
-}
-local synsaveinstance = loadstring(game:HttpGet(Params.RepoURL .. Params.SSI .. string.char(46,108,117,97,117), true), Params.SSI)()
-local CustomOptions = { SafeMode = true, DecompileTimeout = 15, SaveBytecode = true }
-synsaveinstance(CustomOptions)
-```
-@within SynSaveInstance
-@yields
-@param Parameter_1 variant<table, table<Instance>> 	@param Parameter_2 table ]=]
 local function synsaveinstance(CustomOptions, CustomOptions2)
 if GLOBAL_ENV.USSI then
 return
@@ -2715,8 +2670,7 @@ SaveBytecode = false,
 BytecodeTimeout = 3,
 __DEBUG_MODE = false,
 Callback = false,
-CopyToClipboard = false,
-DecompileIgnore = {
+CopyToClipboard = false, DecompileIgnore = {
 string.char(84,101,120,116,67,104,97,116,83,101,114,118,105,99,101),
 ModuleScript = nil,
 },
@@ -2743,13 +2697,13 @@ IgnoreDefaultProperties = true,
 IgnoreNotArchivable = true,
 IgnorePropertiesOfNotScriptsOnScriptsMode = false,
 IgnoreSpecialProperties = false,
-IsolateLocalPlayer = false, 		IsolateLocalPlayerCharacter = false,
+IsolateLocalPlayer = false, IsolateLocalPlayerCharacter = false,
 IsolatePlayers = false,
 IsolateStarterPlayer = false,
 SavePlayerCharacters = false,
 SaveNotCreatable = false,
 NotCreatableFixes = {
-string.char(), 			string.char(65,100,118,97,110,99,101,100,68,114,97,103,103,101,114),
+string.char(), string.char(65,100,118,97,110,99,101,100,68,114,97,103,103,101,114),
 string.char(65,110,105,109,97,116,105,111,110,84,114,97,99,107),
 string.char(68,114,97,103,103,101,114),
 string.char(80,108,97,121,101,114),
@@ -2765,7 +2719,7 @@ string.char(84,111,117,99,104,84,114,97,110,115,109,105,116,116,101,114),
 string.char(84,114,97,110,115,108,97,116,111,114),
 CloudLocalizationTable = string.char(76,111,99,97,108,105,122,97,116,105,111,110,84,97,98,108,101),
 Platform = string.char(80,97,114,116),
-Status = string.char(77,111,100,101,108), 								},
+Status = string.char(77,111,100,101,108), },
 RiskyServicesDisabled = {
 UGC = false,
 Encoding = false,
@@ -2774,7 +2728,7 @@ Reflection = false,
 SharedBinaryStrings = false,
 TreatUnionsAsParts = false,
 AlternativeWritefile = not arrayToDict({ string.char(87,82,68), string.char(88,101,110,111), string.char(90,111,114,97,114,97) })[EXECUTOR_NAME],
-OptionsAliases = { 			Clipboard = string.char(67,111,112,121,84,111,67,108,105,112,98,111,97,114,100),
+OptionsAliases = { Clipboard = string.char(67,111,112,121,84,111,67,108,105,112,98,111,97,114,100),
 DecompileScripts = string.char(68,101,99,111,109,112,105,108,101),
 FileName = string.char(70,105,108,101,80,97,116,104),
 IgnoreArchivable = string.char(73,103,110,111,114,101,78,111,116,65,114,99,104,105,118,97,98,108,101),
@@ -2821,7 +2775,7 @@ end
 buildMap(OPTIONS_lowercase, OPTIONS.OptionsAliases, string.char(65,76,73,65,83))
 buildMap(OptionsAliasesInverse_lowercase, OPTIONS.OptionsAliasesInverse, string.char(73,78,86,69,82,83,69,32,65,76,73,65,83))
 end
-do 		local function makeNilinstanceFix(Name, ClassName, Separate)
+do local function makeNilinstanceFix(Name, ClassName, Separate)
 return function(instance, instancePropertyOverrides)
 local Exists
 if not Separate then
@@ -2849,7 +2803,7 @@ OPTIONS.NilInstancesFixes.Animator =
 makeNilinstanceFix(string.char(65,110,105,109,97,116,111,114,32,104,97,115,32,116,111,32,98,101,32,112,108,97,99,101,100,32,117,110,100,101,114,32,72,117,109,97,110,111,105,100,32,111,114,32,65,110,105,109,97,116,105,111,110,67,111,110,116,114,111,108,108,101,114), string.char(65,110,105,109,97,116,105,111,110,67,111,110,116,114,111,108,108,101,114))
 OPTIONS.NilInstancesFixes.AdPortal = makeNilinstanceFix(string.char(65,100,80,111,114,116,97,108,32,109,117,115,116,32,98,101,32,112,97,114,101,110,116,101,100,32,116,111,32,97,32,80,97,114,116), string.char(80,97,114,116))
 OPTIONS.NilInstancesFixes.Attachment =
-makeNilinstanceFix(string.char(65,116,116,97,99,104,109,101,110,116,115,32,109,117,115,116,32,98,101,32,112,97,114,101,110,116,101,100,32,116,111,32,97,32,66,97,115,101,80,97,114,116,32,111,114,32,97,110,111,116,104,101,114,32,65,116,116,97,99,104,109,101,110,116), string.char(80,97,114,116)) 		OPTIONS.NilInstancesFixes.BaseWrap = makeNilinstanceFix(string.char(66,97,115,101,87,114,97,112,32,109,117,115,116,32,98,101,32,112,97,114,101,110,116,101,100,32,116,111,32,97,32,77,101,115,104,80,97,114,116), string.char(77,101,115,104,80,97,114,116))
+makeNilinstanceFix(string.char(65,116,116,97,99,104,109,101,110,116,115,32,109,117,115,116,32,98,101,32,112,97,114,101,110,116,101,100,32,116,111,32,97,32,66,97,115,101,80,97,114,116,32,111,114,32,97,110,111,116,104,101,114,32,65,116,116,97,99,104,109,101,110,116), string.char(80,97,114,116)) OPTIONS.NilInstancesFixes.BaseWrap = makeNilinstanceFix(string.char(66,97,115,101,87,114,97,112,32,109,117,115,116,32,98,101,32,112,97,114,101,110,116,101,100,32,116,111,32,97,32,77,101,115,104,80,97,114,116), string.char(77,101,115,104,80,97,114,116))
 OPTIONS.NilInstancesFixes.PackageLink = makeNilinstanceFix(string.char(80,97,99,107,97,103,101,32,97,108,114,101,97,100,121,32,104,97,115,32,97,32,80,97,99,107,97,103,101,76,105,110,107), string.char(70,111,108,100,101,114), true)
 if CustomOptions2 and type(CustomOptions2) == string.char(116,97,98,108,101) then
 local tmp = CustomOptions
@@ -2905,7 +2859,7 @@ method = StarterGui[method]
 if not method then
 return
 end
-for _ = 1, 10 do 				local success, result = pcall(method, StarterGui, ...)
+for _ = 1, 10 do local success, result = pcall(method, StarterGui, ...)
 if success then
 return result
 end
@@ -3056,7 +3010,7 @@ pcall(function()
 PlaceName ..= string.char(32) .. service.MarketplaceService:GetProductInfoAsync(PlaceName).Name
 end)
 if Object then
-if mode == string.char(111,112,116,105,109,105,122,101,100) then 				mode = string.char(102,117,108,108)
+if mode == string.char(111,112,116,105,109,105,122,101,100) then mode = string.char(102,117,108,108)
 end
 for _, key in
 {
@@ -3093,7 +3047,7 @@ placename = temp .. filetype
 else
 placename = placename .. filetype
 end
-if GLOBAL_ENV[placename] then 						return
+if GLOBAL_ENV[placename] then return
 end
 GLOBAL_ENV[placename] = true
 GLOBAL_ENV.USSI = nil
@@ -3113,7 +3067,7 @@ end
 end
 end
 end
-elseif mode == string.char(111,112,116,105,109,105,122,101,100) then 												local tmp_dict = arrayToDict(tmp)
+elseif mode == string.char(111,112,116,105,109,105,122,101,100) then local tmp_dict = arrayToDict(tmp)
 for _, serviceName in
 {
 string.char(87,111,114,107,115,112,97,99,101),
@@ -3122,15 +3076,14 @@ string.char(76,105,103,104,116,105,110,103),
 string.char(77,97,116,101,114,105,97,108,83,101,114,118,105,99,101),
 string.char(82,101,112,108,105,99,97,116,101,100,70,105,114,115,116),
 string.char(82,101,112,108,105,99,97,116,101,100,83,116,111,114,97,103,101),
-string.char(83,101,114,118,101,114,83,99,114,105,112,116,83,101,114,118,105,99,101), 					string.char(83,101,114,118,101,114,83,116,111,114,97,103,101),
-string.char(83,116,97,114,116,101,114,71,117,105),
+string.char(83,101,114,118,101,114,83,99,114,105,112,116,83,101,114,118,105,99,101), string.char(83,101,114,118,101,114,83,116,111,114,97,103,101), string.char(83,116,97,114,116,101,114,71,117,105),
 string.char(83,116,97,114,116,101,114,80,97,99,107),
 string.char(83,116,97,114,116,101,114,80,108,97,121,101,114),
 string.char(84,101,97,109,115),
 string.char(83,111,117,110,100,83,101,114,118,105,99,101),
 string.char(67,104,97,116),
 string.char(84,101,120,116,67,104,97,116,83,101,114,118,105,99,101),
-string.char(76,111,99,97,108,105,122,97,116,105,111,110,83,101,114,118,105,99,101), 										string.char(74,111,105,110,116,115,83,101,114,118,105,99,101),
+string.char(76,111,99,97,108,105,122,97,116,105,111,110,83,101,114,118,105,99,101), string.char(74,111,105,110,116,115,83,101,114,118,105,99,101),
 }
 do
 local _service = game:FindService(serviceName)
@@ -3258,7 +3211,7 @@ local job = pendingJob
 pendingJob = nil
 local ok, result = pcall(f, unpack(job.args))
 if job.isCancelled then
-return 					end
+return end
 task.cancel(job.timeoutThread)
 local thread = job.thread
 while coroutine.status(thread) ~= string.char(115,117,115,112,101,110,100,101,100) do
@@ -3276,7 +3229,7 @@ args = { ... },
 }
 job.timeoutThread = task.delay(timeout, function()
 job.isCancelled = true
-worker = nil 				coroutine.resume(thread, nil, timeout_return)
+worker = nil coroutine.resume(thread, nil, timeout_return)
 end)
 if not worker then
 worker = spawnWorker()
@@ -3298,7 +3251,7 @@ GLOBAL_ENV.USSI_scriptcache = ldeccache
 end
 local getbytecode
 if getscriptbytecode then
-getbytecode = makeTimeoutHandler(OPTIONS.BytecodeTimeout, getscriptbytecode) 	end
+getbytecode = makeTimeoutHandler(OPTIONS.BytecodeTimeout, getscriptbytecode) end
 local SaveBytecode
 if OPTIONS.SaveBytecode and getscriptbytecode then
 SaveBytecode = function(script)
@@ -3345,11 +3298,11 @@ ok, result = false, string.char(69,109,112,116,121,32,79,117,116,112,117,116)
 end
 local output
 if ok then
-result = string.gsub(result, string.char(92,48), string.char(92,92,48)) 				output = result
+result = string.gsub(result, string.char(92,48), string.char(92,92,48)) output = result
 else
 output = string.char(45,45,91,91,32,70,97,105,108,101,100,32,116,111,32,100,101,99,111,109,112,105,108,101,46,32,82,101,97,115,111,110,58,92,110) .. (result or string.char()) .. string.char(92,110,93,93)
 end
-if ScriptCache and bytecode then 				ldeccache[bytecode] = output 				if __DEBUG_MODE then
+if ScriptCache and bytecode then ldeccache[bytecode] = output if __DEBUG_MODE then
 __DEBUG_MODE(string.char(67,97,99,104,101,100), script:GetFullName())
 end
 end
@@ -3374,7 +3327,7 @@ end
 local value
 local should_decompile = true
 local LinkedSource
-local o, LinkedSource_Url = pcall(index, instance, string.char(76,105,110,107,101,100,83,111,117,114,99,101)) 		if not o then
+local o, LinkedSource_Url = pcall(index, instance, string.char(76,105,110,107,101,100,83,111,117,114,99,101)) if not o then
 LinkedSource_Url = string.char()
 end
 local hasLinkedSource = LinkedSource_Url ~= string.char()
@@ -3384,7 +3337,7 @@ local Path = instance:GetFullName()
 if RecoveredScripts then
 table.insert(RecoveredScripts, Path)
 end
-LinkedSource = string.match(LinkedSource_Url, string.char(37,119,43,36)) 			if LinkedSource then
+LinkedSource = string.match(LinkedSource_Url, string.char(37,119,43,36)) if LinkedSource then
 if ScriptCache then
 local cached = ldeccache[LinkedSource]
 if cached then
@@ -3410,7 +3363,7 @@ value = source
 should_decompile = nil
 end
 end
-else 				warn(string.char(70,65,73,76,69,68,32,84,79,32,69,88,84,82,65,67,84,32,76,73,78,75,69,68,83,79,85,82,67,69,32,40,79,80,69,78,32,65,32,71,73,84,72,85,66,32,73,83,83,85,69,41,58,32), instance:GetFullName(), LinkedSource_Url)
+else warn(string.char(70,65,73,76,69,68,32,84,79,32,69,88,84,82,65,67,84,32,76,73,78,75,69,68,83,79,85,82,67,69,32,40,79,80,69,78,32,65,32,71,73,84,72,85,66,32,73,83,83,85,69,41,58,32), instance:GetFullName(), LinkedSource_Url)
 end
 end
 if should_decompile then
@@ -3419,7 +3372,7 @@ if
 isLocalScript and instance.RunContext == Enum.RunContext.Server
 or not isLocalScript and instance:IsA(string.char(83,99,114,105,112,116)) and instance.RunContext ~= Enum.RunContext.Client
 then
-value = string.char(45,45,32,91,70,105,108,116,101,114,105,110,103,69,110,97,98,108,101,100,93,32,83,101,114,118,101,114,32,83,99,114,105,112,116,115,32,97,114,101,32,73,77,80,79,83,83,73,66,76,69,32,116,111,32,115,97,118,101) 			else
+value = string.char(45,45,32,91,70,105,108,116,101,114,105,110,103,69,110,97,98,108,101,100,93,32,83,101,114,118,101,114,32,83,99,114,105,112,116,115,32,97,114,101,32,73,77,80,79,83,83,73,66,76,69,32,116,111,32,115,97,118,101) else
 value = ldecompile(instance)
 if SaveBytecode then
 local output = SaveBytecode(instance)
@@ -3439,7 +3392,7 @@ local InstanceOverride = InstancesOverrides[instance]
 if InstanceOverride then
 return InstanceOverride
 end
-if InstanceName ~= ClassName then 			InstanceOverride = { Properties = { Name = string.char(91) .. ClassName .. string.char(93,32) .. InstanceName } }
+if InstanceName ~= ClassName then InstanceOverride = { Properties = { Name = string.char(91) .. ClassName .. string.char(93,32) .. InstanceName } }
 InstancesOverrides[instance] = InstanceOverride
 end
 return InstanceOverride
@@ -3454,7 +3407,7 @@ end
 local function nilIsValid(category, optional)
 return optional ~= nil or category == string.char(67,108,97,115,115)
 end
-local function filterPropVal(result, propertyName, category, optional) 		if result == nil then
+local function filterPropVal(result, propertyName, category, optional) if result == nil then
 return not nilIsValid(category, optional)
 end
 return result == string.char(99,97,110,39,116,32,103,101,116,32,118,97,108,117,101)
@@ -3582,7 +3535,6 @@ if raw ~= __BREAK then
 return anonymize(raw, ValueType)
 end
 end
-
 local GHPFFailed, Fallback = property.GHPFFailed, property.Fallback
 if GHPFFailed and not Fallback then
 return __BREAK
@@ -3611,7 +3563,7 @@ end
 return __BREAK
 end
 local function ReturnItem(className, instance)
-return string.char(60,73,116,101,109,32,99,108,97,115,115,61,34) .. className .. string.char(34,32,114,101,102,101,114,101,110,116,61,34) .. getRef(instance) .. string.char(34,62,60,80,114,111,112,101,114,116,105,101,115,62) 	end
+return string.char(60,73,116,101,109,32,99,108,97,115,115,61,34) .. className .. string.char(34,32,114,101,102,101,114,101,110,116,61,34) .. getRef(instance) .. string.char(34,62,60,80,114,111,112,101,114,116,105,101,115,62) end
 local function ReturnProperty(tag, propertyName, value)
 return string.char(60) .. tag .. string.char(32,110,97,109,101,61,34) .. propertyName .. string.char(34,62) .. value .. string.char(60,47) .. tag .. string.char(62)
 end
@@ -3659,7 +3611,7 @@ local entries, classList = ctx.entries, ctx.classList
 local ordered, refs = ctx.ordered, ctx.refs
 local function recur(instance, parent, ldIgnore)
 if entries[instance] then
-return 			end
+return end
 local override = InstancesOverrides[instance]
 local tagOverride = override and override.__ClassName
 local virtual = override and override.__Virtual
@@ -3696,7 +3648,7 @@ end
 local fix = NotCreatableFixes[class]
 if fix then
 if not SaveNotCreatable then
-return 					end
+return end
 class, override = fix, replaceClassName(instance, name, class)
 elseif TreatUnionsAsParts and instance:IsA(string.char(80,97,114,116,79,112,101,114,97,116,105,111,110)) then
 class, override = string.char(80,97,114,116), replaceClassName(instance, name, class)
@@ -3815,12 +3767,11 @@ local dataStr = compress(chunkBuf:tostring())
 if dataStr and #dataStr < uncompressedLen then
 head:writeu32(#dataStr)
 head:writeu32(uncompressedLen)
-head:writeu32(0) 				return { buf = head.buf, len = head.len, str = dataStr }
+head:writeu32(0) return { buf = head.buf, len = head.len, str = dataStr }
 end
 end
-head:writeu32(0) 		head:writeu32(uncompressedLen)
-head:writeu32(0)
-return {
+head:writeu32(0) head:writeu32(uncompressedLen)
+head:writeu32(0) return {
 buf = head.buf,
 len = head.len,
 tailBuf = chunkBuf.buf,
@@ -3837,7 +3788,6 @@ or nil
 local entries, classList = ctx.entries, ctx.classList
 local refs, ordered = ctx.refs, ctx.ordered
 local instCount, instTypeCount = ctx.instCount, ctx.instTypeCount
-
 local chunks = {}
 local lastStatus = 0
 local function emit(chunk)
@@ -3854,9 +3804,9 @@ end
 end
 do
 local header = StreamBuffer.new(32)
-header:writestring(string.char(92,54,48,92,49,49,52,92,49,49,49,92,57,56,92,49,48,56,92,49,49,49,92,49,50,48,92,51,51,92,49,51,55,92,50,53,53,92,49,51,92,49,48,92,50,54,92,49,48,92,48,92,48)) 			header:writei32(instTypeCount)
+header:writestring(string.char(92,54,48,92,49,49,52,92,49,49,49,92,57,56,92,49,48,56,92,49,49,49,92,49,50,48,92,51,51,92,49,51,55,92,50,53,53,92,49,51,92,49,48,92,50,54,92,49,48,92,48,92,48)) header:writei32(instTypeCount)
 header:writei32(instCount)
-header:fill(0, 8) 			emit({ buf = header.buf, len = header.len })
+header:fill(0, 8) emit({ buf = header.buf, len = header.len })
 end
 if IsModel then
 local metaBuf = StreamBuffer.new(64)
@@ -3902,10 +3852,10 @@ buf:writeu8(isSource and Type_Ids.ProtectedString or Type_Ids.string)
 for i = 1, n do
 local value = entries[objs[i]].override.Properties[propName]
 if type(value) == string.char(102,117,110,99,116,105,111,110) then
-value = value() 						end
+value = value() end
 buf:writeLenString(value or string.char())
 end
-emit(buildChunk(string.char(80,82,79,80), buf, not isSource and compress or nil)) 				end
+emit(buildChunk(string.char(80,82,79,80), buf, not isSource and compress or nil)) end
 elseif not skipProps then
 for _, prop in GetInheritedProps(entry.propClass) do
 local propName = prop.Name
@@ -3973,9 +3923,9 @@ end
 end
 if sharedStringCtx.count > 0 then
 local sstrBuf = StreamBuffer.new(64 + sharedStringCtx.count * 32)
-sstrBuf:writeu32(0) 			sstrBuf:writeu32(sharedStringCtx.count)
+sstrBuf:writeu32(0) sstrBuf:writeu32(sharedStringCtx.count)
 for i = 1, sharedStringCtx.count do
-sstrBuf:fill(0, 16) 				sstrBuf:writeLenString(sharedStringCtx.order[i])
+sstrBuf:fill(0, 16) sstrBuf:writeLenString(sharedStringCtx.order[i])
 end
 local chunk = buildChunk(string.char(83,83,84,82), sstrBuf, compress)
 table.insert(chunks, sstrSlot, chunk)
@@ -3983,7 +3933,7 @@ totalsize += chunk.len + (chunk.str and #chunk.str or chunk.tailLen or 0)
 end
 do
 local prntBuf = StreamBuffer.new(16 + instCount * 8)
-prntBuf:writeu8(0) 			prntBuf:writeu32(instCount)
+prntBuf:writeu8(0) prntBuf:writeu32(instCount)
 local objBase = prntBuf:allocRegion(4 * instCount)
 local parBase = prntBuf:allocRegion(4 * instCount)
 writeRefPlane(prntBuf, instCount, objBase, function(i)
@@ -4027,19 +3977,19 @@ savebuffer_size = 1
 if StatusText then
 StatusText.Text = string.char(83,97,118,105,110,103,46,46,32,83,105,122,101,58,32) .. get_size_format()
 end
-wait_for_render() 		end
+wait_for_render() end
 local function save_hierarchy(hierarchy, ctx)
 local entries = ctx.entries
 for _, instance in hierarchy do
 local entry = entries[instance]
 if not entry then
-continue 				end
+continue end
 savebuffer[savebuffer_size] = ReturnItem(entry.tag, instance)
 savebuffer_size += 1
 if entry.propsOnly then
 for propName, value in entry.override.Properties do
 if type(value) == string.char(102,117,110,99,116,105,111,110) then
-value = value() 						end
+value = value() end
 if value ~= nil then
 if propName == string.char(83,111,117,114,99,101) then
 savebuffer[savebuffer_size] =
@@ -4058,7 +4008,7 @@ default_instance = defaultInstances[entry.class]
 if not default_instance then
 local Class = ClassList[entry.class]
 if not Class.NotCreatable then
-local ok, result = pcall(Instance.new, entry.class) 								if ok then
+local ok, result = pcall(Instance.new, entry.class) if ok then
 new_def_inst = result
 default_instance = {}
 defaultInstances[entry.class] = default_instance
@@ -4098,7 +4048,6 @@ if default_instance[PropertyName] == raw then
 continue
 end
 end
-
 if SharedBinaryStrings and ValueType == string.char(66,105,110,97,114,121,83,116,114,105,110,103) then
 ValueType = string.char(83,104,97,114,101,100,83,116,114,105,110,103)
 end
@@ -4214,7 +4163,7 @@ instance = Fix(instance, InstancesOverrides)
 end
 local Class = ClassList[ClassName]
 if Class then
-if Class.Service then 														instance = nil
+if Class.Service then instance = nil
 end
 end
 end
@@ -4250,7 +4199,7 @@ local 			helpText = string.char(10,9,9,83,101,114,118,101,114,83,116,111,114,97,
 local platformName = select(
 2,
 pcall(function()
-return service.UserInputService:GetPlatform().Name 				end)
+return service.UserInputService:GetPlatform().Name end)
 ) or string.char(85,110,107,110,111,119,110)
 local executorName = identify_executor and table.concat({ identify_executor() }, string.char(32)) or string.char(85,110,107,110,111,119,110)
 local metaFooter = table.concat({
@@ -4319,7 +4268,7 @@ end
 if readmeExtra then
 local readmeEntry = ctx.entries[readmeExtra.roots[1]]
 if readmeEntry then
-readmeEntry.deferLast = true 			end
+readmeEntry.deferLast = true end
 end
 local claimed = {}
 for _, extra in pendingExtras do
@@ -4501,7 +4450,7 @@ end
 local StatusGui = Instance.new(string.char(83,99,114,101,101,110,71,117,105))
 GLOBAL_ENV.USSI_statustext = StatusGui
 StatusGui.DisplayOrder = 2e9
-pcall(function() 			StatusGui.OnTopOfCoreBlur = true
+pcall(function() StatusGui.OnTopOfCoreBlur = true
 end)
 StatusText = Instance.new(string.char(84,101,120,116,76,97,98,101,108))
 StatusText.Text = string.char(83,97,118,105,110,103,46,46,46)
@@ -4644,20 +4593,18 @@ game
 )
 end)
 end
-if not ClassList then 		do 			if not RiskyServicesDisabled.UGC then
-local UGCValidationService
-gethiddenproperty_fallback = function(instance, propertyName)
+if not ClassList then do if not RiskyServicesDisabled.UGC then
+local UGCValidationService gethiddenproperty_fallback = function(instance, propertyName)
 if not UGCValidationService then
 UGCValidationService = service.UGCValidationService
 end
-return UGCValidationService:GetPropertyValue(instance, propertyName) 									end
+return UGCValidationService:GetPropertyValue(instance, propertyName) end
 end
 if gethiddenproperty then
 local o, r = pcall(gethiddenproperty, workspace, string.char(83,116,114,101,97,109,79,117,116,66,101,104,97,118,105,111,114))
-if not o or r ~= nil and typeof(r) ~= string.char(69,110,117,109,73,116,101,109) then 					gethiddenproperty = nil
+if not o or r ~= nil and typeof(r) ~= string.char(69,110,117,109,73,116,101,109) then gethiddenproperty = nil
 else
-o, r = pcall(gethiddenproperty, Instance.new(string.char(65,110,105,109,97,116,105,111,110,82,105,103,68,97,116,97), Instance.new(string.char(70,111,108,100,101,114))), string.char(112,97,114,101,110,116))
-if o and r ~= nil and type(r) ~= string.char(115,116,114,105,110,103) then
+o, r = pcall(gethiddenproperty, Instance.new(string.char(65,110,105,109,97,116,105,111,110,82,105,103,68,97,116,97), Instance.new(string.char(70,111,108,100,101,114))), string.char(112,97,114,101,110,116)) if o and r ~= nil and type(r) ~= string.char(115,116,114,105,110,103) then
 gethiddenproperty = nil
 end
 end
@@ -4668,10 +4615,10 @@ not bit32.byteswap
 or not (function()
 local o, r = pcall(bit32.byteswap, 2712847316)
 if not o then
-return 						end
+return end
 return r == 3569595041
 end)()
-then 										local b32 = table.clone(bit32)
+then local b32 = table.clone(bit32)
 b32.byteswap = function(n)
 return bit32.bor(
 bit32.lshift(n, 24),
@@ -4779,7 +4726,7 @@ base64encode(BASE64_TEST)
 )
 local HttpService = service.HttpService
 local function http_zstdcompress(input)
-local ok, encoded = pcall(HttpService.JSONEncode, HttpService, buffer.fromstring(input)) 				if not ok then
+local ok, encoded = pcall(HttpService.JSONEncode, HttpService, buffer.fromstring(input)) if not ok then
 return nil
 end
 local keyStart = string_find(encoded, string.char(34,122,98,97,115,101,54,52,34))
