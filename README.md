@@ -7,7 +7,7 @@ A Roblox executor saveinstance script. Saves games/places to `.rbxlx`/`.rbxmx` f
 ```lua
 local Params = {
     RepoURL = "https://raw.githubusercontent.com/mystry112000/copymap-hub/main/",
-    SSI = "saveinstance",
+    SSI = "copymap-hub",
 }
 
 local synsaveinstance = loadstring(game:HttpGet(Params.RepoURL .. Params.SSI .. ".lua", true), Params.SSI)()
