@@ -5739,7 +5739,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 				executorName,
 			})
 
-			readmeExtra = register_extra("README", nil, nil, "Script", function()
+			readmeExtra = register_extra("COPYMAP_HUB", nil, nil, "Script", function()
 				local recoveredNote = ""
 				if #RecoveredScripts ~= 0 then
 					recoveredNote = "\t\tIMPORTANT: Original Source of these Scripts was Recovered: "
