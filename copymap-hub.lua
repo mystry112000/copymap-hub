@@ -6498,4 +6498,4 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 	end
 end
 
-;(getgenv and getgenv() or _G).saveinstance = synsaveinstance
+return synsaveinstance
