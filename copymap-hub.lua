@@ -4845,4 +4845,4 @@ task.wait(Log10 * 2 + ExtraTime)
 game:Shutdown()
 end
 end
-return synsaveinstance
+_G.saveinstance = synsaveinstance
