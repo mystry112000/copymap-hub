@@ -3726,7 +3726,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 		CompressionMode = "zstd",
 		CompressionLevel = 9,
 		Decompile = true,
-		DecompileTimeout = 10,
+		DecompileTimeout = 30,
 		DecompileJobless = false,
 		-- decomptype = "",
 		scriptcache = true,
